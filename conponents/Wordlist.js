@@ -1,18 +1,19 @@
 app.component('word-list',{
-    props:{
-        words:{
-            type: Array,
-            required: true        
-        }
-    },
+
     template: 
     /*html*/
     ` 
-    <div class="contatiner">
+    <div class="contatiner page">
     <h3>Words</h3>
     <ul>
-        <li v-for="word in words">
-        {{ words.length }}
+        <li v-for="words in words">
+        {{ sign }}
+        </li>
+        <li>
+        {{ up }}
+        </li>
+        <li>
+        {{ low }}
         </li>
     </ul>
 </div>
